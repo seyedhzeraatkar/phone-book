@@ -34,8 +34,8 @@
 			this.flowLayoutPanelMain = new System.Windows.Forms.FlowLayoutPanel();
 			this.buttonExit = new System.Windows.Forms.Button();
 			this.buttonSave = new System.Windows.Forms.Button();
+			this.buttonEdit = new System.Windows.Forms.Button();
 			this.buttonCancel = new System.Windows.Forms.Button();
-			this.buttonDelete = new System.Windows.Forms.Button();
 			this.textBoxFirstName = new System.Windows.Forms.TextBox();
 			this.tableLayoutPanelName = new System.Windows.Forms.TableLayoutPanel();
 			this.lableFirstName = new System.Windows.Forms.Label();
@@ -120,6 +120,7 @@
 			// buttonSave
 			// 
 			this.buttonSave.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.buttonSave.Enabled = false;
 			this.buttonSave.Location = new System.Drawing.Point(435, 35);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(210, 26);
@@ -128,31 +129,35 @@
 			this.buttonSave.UseVisualStyleBackColor = true;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
+			// buttonEdit
+			// 
+			this.buttonEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.buttonEdit.Location = new System.Drawing.Point(219, 35);
+			this.buttonEdit.Name = "buttonEdit";
+			this.buttonEdit.Size = new System.Drawing.Size(210, 26);
+			this.buttonEdit.TabIndex = 10;
+			this.buttonEdit.Text = "&Edit";
+			this.buttonEdit.UseVisualStyleBackColor = true;
+			this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+			// 
 			// buttonCancel
 			// 
 			this.buttonCancel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.buttonCancel.Location = new System.Drawing.Point(219, 35);
+			this.buttonCancel.Enabled = false;
+			this.buttonCancel.Location = new System.Drawing.Point(3, 35);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(210, 26);
-			this.buttonCancel.TabIndex = 10;
+			this.buttonCancel.TabIndex = 9;
 			this.buttonCancel.Text = "&Cancel";
 			this.buttonCancel.UseVisualStyleBackColor = true;
-			// 
-			// buttonDelete
-			// 
-			this.buttonDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.buttonDelete.Location = new System.Drawing.Point(3, 35);
-			this.buttonDelete.Name = "buttonDelete";
-			this.buttonDelete.Size = new System.Drawing.Size(210, 26);
-			this.buttonDelete.TabIndex = 9;
-			this.buttonDelete.Text = "&Delete";
-			this.buttonDelete.UseVisualStyleBackColor = true;
+			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
 			// textBoxFirstName
 			// 
 			this.textBoxFirstName.Dock = System.Windows.Forms.DockStyle.Top;
 			this.textBoxFirstName.Location = new System.Drawing.Point(103, 3);
 			this.textBoxFirstName.Name = "textBoxFirstName";
+			this.textBoxFirstName.ReadOnly = true;
 			this.textBoxFirstName.Size = new System.Drawing.Size(104, 20);
 			this.textBoxFirstName.TabIndex = 3;
 			// 
@@ -190,8 +195,8 @@
 			this.tableLayoutPanelHeader.Controls.Add(this.tableLayoutPanelPhoneNumber, 2, 0);
 			this.tableLayoutPanelHeader.Controls.Add(this.tableLayoutPanelLastName, 1, 0);
 			this.tableLayoutPanelHeader.Controls.Add(this.buttonSave, 2, 1);
-			this.tableLayoutPanelHeader.Controls.Add(this.buttonCancel, 1, 1);
-			this.tableLayoutPanelHeader.Controls.Add(this.buttonDelete, 0, 1);
+			this.tableLayoutPanelHeader.Controls.Add(this.buttonEdit, 1, 1);
+			this.tableLayoutPanelHeader.Controls.Add(this.buttonCancel, 0, 1);
 			this.tableLayoutPanelHeader.Controls.Add(this.tableLayoutPanelName, 0, 0);
 			this.tableLayoutPanelHeader.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanelHeader.Location = new System.Drawing.Point(3, 3);
@@ -241,6 +246,7 @@
 			this.textBoxLastName.Dock = System.Windows.Forms.DockStyle.Top;
 			this.textBoxLastName.Location = new System.Drawing.Point(103, 3);
 			this.textBoxLastName.Name = "textBoxLastName";
+			this.textBoxLastName.ReadOnly = true;
 			this.textBoxLastName.Size = new System.Drawing.Size(104, 20);
 			this.textBoxLastName.TabIndex = 3;
 			// 
@@ -274,6 +280,7 @@
 			this.textBoxPhoneNumber.Dock = System.Windows.Forms.DockStyle.Top;
 			this.textBoxPhoneNumber.Location = new System.Drawing.Point(103, 3);
 			this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
+			this.textBoxPhoneNumber.ReadOnly = true;
 			this.textBoxPhoneNumber.Size = new System.Drawing.Size(104, 20);
 			this.textBoxPhoneNumber.TabIndex = 4;
 			// 
@@ -358,8 +365,8 @@
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelMain;
 		private System.Windows.Forms.Button buttonExit;
 		private System.Windows.Forms.Button buttonSave;
+		private System.Windows.Forms.Button buttonEdit;
 		private System.Windows.Forms.Button buttonCancel;
-		private System.Windows.Forms.Button buttonDelete;
 		private System.Windows.Forms.TextBox textBoxFirstName;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanelName;
 		private System.Windows.Forms.Label lableFirstName;
