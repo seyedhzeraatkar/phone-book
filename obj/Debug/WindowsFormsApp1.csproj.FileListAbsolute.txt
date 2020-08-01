@@ -7,3 +7,15 @@ G:\work\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.
 G:\work\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
 G:\work\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 G:\work\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\contact.accdb
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.exe.config
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.exe
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.pdb
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.Entry.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.infofrm.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.FormEntry.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.Properties.Resources.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\PhoneBook.exe
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\PhoneBook.pdb

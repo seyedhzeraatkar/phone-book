@@ -1,0 +1,12 @@
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.exe.config
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.exe
+D:\source\repos\Zeraatkar\phone-book\bin\Debug\PhoneBook.pdb
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.Entry.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.infofrm.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.FormEntry.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Diten.Test.Phonebook.Properties.Resources.resources
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Phonebook.csproj.GenerateResource.cache
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Phonebook.csproj.CoreCompileInputs.cache
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\PhoneBook.exe
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\PhoneBook.pdb
+D:\source\repos\Zeraatkar\phone-book\obj\Debug\Phonebook.csprojAssemblyReference.cache
