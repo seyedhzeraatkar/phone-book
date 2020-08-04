@@ -13,6 +13,7 @@ namespace Diten.Test.Phonebook
 		/// <summary>
 		/// Constructor.
 		/// </summary>
+		//this function is constractors
 		public Entry()
 		{
 			InitializeComponent();
@@ -24,14 +25,19 @@ namespace Diten.Test.Phonebook
 			EditMode = false;
 			LoadData();
 		}
-
+		//finish function constractor
+		/*
+		 * this function for relation between this form and datagrid(databse)
+		 */
 		private void dataGridViewContacts_RowEnter(object sender, DataGridViewCellEventArgs e)
 		{
 			textBoxFirstName.Text = GetSelectedContact().FirstName;
 			textBoxLastName.Text = GetSelectedContact().LastName;
 			textBoxPhoneNumber.Text = GetSelectedContact().PhoneNumber;
 		}
-
+		/*
+		 * this function for save new record
+		 */
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
 			var tmp00 = tblcontactTableAdapter.HasItem(GetSelectedContact().PhoneNumber);
@@ -65,28 +71,44 @@ namespace Diten.Test.Phonebook
 			dataGridViewContacts.Enabled = !EditMode;
 			LoadData();
 		}
-
+		/*
+		 * exit button
+		 */
 		private void buttonExit_Click(object sender, EventArgs e)
 		{
 			this.ParentForm.Close();
 		}
-
+		/*
+		 * this function for insert new record
+		 */
 		private void buttonNewContact_Click(object sender, EventArgs e)
 		{
 			EditMode = true;
 			ClearTextBoxes();
-
+			buttonDelete.Enabled = false;
 			dataGridViewContacts.SelectedRows[0].Selected = false;
 		}
+		/*
+		 * this function for enable form text box
+		 * that user can update record
+		 * and enable button save and cancele
+		 */
 		private void buttonEdit_Click(object sender, EventArgs e)
 		{
 			EditMode = true;
+			buttonDelete.Enabled = false;
 		}
-
+		/*
+		 * this function for cancel button
+		 * if user click 
+		 * then editmood form will disabled
+		 * button delete will enabled
+		 */
 		private void buttonCancel_Click(object sender, EventArgs e)
 		{
 			EditMode = false;
 			dataGridViewContacts.Rows[0].Selected = !EditMode;
+			buttonDelete.Enabled = true;
 		}
 		#endregion
 
@@ -175,8 +197,27 @@ namespace Diten.Test.Phonebook
 				SwitchToEditMode(value);
 			}
 		}
+
 		#endregion
-
-
-	}
+		/*
+		 * this function for delete record by phone number
+		 *first search record According to phone number if there was a record 
+		 *then this function ask questien from user
+		 *if user click yes record removed
+		 */
+		private void buttonDelete_Click(object sender, EventArgs e)
+        {
+			var tmp00 = tblcontactTableAdapter.HasItem(GetSelectedContact().PhoneNumber);
+			if (tmp00.Rows.Count > 0)
+			{
+				if(MessageBox.Show($"do you want to delete record : {GetContact().PhoneNumber} ",
+					"question",
+					MessageBoxButtons.YesNo,
+					MessageBoxIcon.Question,MessageBoxDefaultButton.Button2)==DialogResult.Yes)
+				tblcontactTableAdapter.DeleteQuery(
+					GetSelectedContact().PhoneNumber);
+			}
+			LoadData();
+		}
+    }
 }
